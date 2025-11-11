@@ -1,0 +1,45 @@
+{
+  "name": "raspberrypi-baremetal",
+  "title": "Raspberry Pi Bare Metal (Circle2)",
+  "description": "Bare-metal development platform for Raspberry Pi boards using the Circle2 library.",
+  "url": "https://github.com/yourname/platform-raspberrypi-baremetal",
+  "version": "0.2.1",
+  "license": "MIT",
+  "packageRepositories": [
+    "https://registry.platformio.org"
+  ],
+  "frameworks": {
+    "circle": {
+      "package": "framework-circle2",
+      "script": "builder/frameworks/circle.py"
+    }
+  },
+  "packages": {
+    "platformio/toolchain-gccarmnoneeabi": {
+      "type": "toolchain",
+      "version": "~1.120301.0",
+      "optional": false
+    },
+    "framework-circle2": {
+      "type": "framework",
+      "optional": false,
+      "version": "*",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/rsta2/circle.git"
+      }
+    }
+  },
+  "build": {
+    "core": "circle",
+    "extra_flags": "-DRPI_BAREMETAL"
+  },
+  "boards": [
+    "rpi1b",
+    "rpi2b",
+    "rpi3b",
+    "rpi3bp",
+    "rpi4b",
+    "rpizero"
+  ]
+}

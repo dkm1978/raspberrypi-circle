@@ -1,0 +1,13 @@
+{
+  "build": {
+    "core": "circle",
+    "cpu": "cortex-a7",
+    "f_cpu": "700000000L",
+    "mcu": "bcm2835",
+    "variant": "rpi1b"
+  },
+  "frameworks": ["circle"],
+  "name": "Raspberry Pi RPI1B (bare metal)",
+  "url": "https://www.raspberrypi.com/",
+  "vendor": "Raspberry Pi"
+}

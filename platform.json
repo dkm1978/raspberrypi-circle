@@ -15,18 +15,24 @@
     }
   },
   "packages": {
-    "platformio/toolchain-gccarmnoneeabi": {
+    "toolchain-gccarmnoneeabi": {
       "type": "toolchain",
-      "version": "~1.120301.0",
-      "optional": false
+      "owner": "platformio",
+      "version": ">=1.60301.0,<1.80000.0",
+      "optionalVersions": [
+        "~1.60301.0",
+        "~1.80201.0",
+        "~1.90201.0",
+        "~1.120301.0"
+      ]
     },
     "framework-circle2": {
       "type": "framework",
       "optional": false,
       "version": "*",
       "repository": {
-        "type": "git",
-        "url": "https://github.com/rsta2/circle.git"
+        "type": "zip",
+        "url": "https://github.com/dkm1978/raspberrypi-circle/raw/refs/heads/main/framework-circle2.zip"
       }
     }
   },

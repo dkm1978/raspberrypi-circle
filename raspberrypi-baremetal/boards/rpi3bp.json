@@ -1,0 +1,13 @@
+{
+  "build": {
+    "core": "circle",
+    "cpu": "cortex-a53",
+    "f_cpu": "1400000000L",
+    "mcu": "bcm2837",
+    "variant": "rpi3bp"
+  },
+  "frameworks": ["circle"],
+  "name": "Raspberry Pi RPI3BP (bare metal)",
+  "url": "https://www.raspberrypi.com/",
+  "vendor": "Raspberry Pi"
+}
